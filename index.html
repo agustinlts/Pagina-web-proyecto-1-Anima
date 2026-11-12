@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaBin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+  </head>
+  <body>
+    <!--1 Hero -->
+    <div class="hero">
+      <img src="img/logo.png">
+      <br>
+      <h2>El orden comienza con NovaBin</h2>
+      <p>Mejoramos el ambiente educativo e incrementamos la concentración</p>
+      <p>Solucionamos el problema de la limpieza en las aulas</p>
+    </div>
+
+    <hr>
+    <!--2 Sobre el proyecto -->
+    <div class="sobre" class="color1">
+      <h2>
+        Los estudiantes tiran sus residuos a distancia y la basura termina en el
+        suelo
+      </h2>
+      <br>
+      <p>Los alumnos se desconcentran y perjudica su aprendizaje</p>
+      <br>
+      <ul>
+        <li>Los alumnos se vuelven distraídos</li>
+        <li>La clase se vuelve un espacio poco higiénico</li>
+        <li>Se genera una incomodidad en la clase</li>
+        <li>Se le dificulta dar la clase a los profesores con los alumnos
+          distraídos</li>
+      </ul>
+    </div>
+    <!--3 Nuestra solución -->
+    <div class="solucion" class="color2">
+      <img src="img/modelo-papelera.png" height="300px" width="300">
+      <div>
+      <h2>
+        Nuestro proyecto es una papelera automática la cual permite que el
+        ambiente de la clase sea más cómodo y favorable para el aprendizaje.
+      </h2>
+      <p>
+        Funciona mediante el uso de una micro-bit la cual cuenta con un sensor
+        de ultrasonido y un motor, los cuales mediante código, la tapa se abre
+        con la presencia de alguien.
+      </p>
+      <br>
+      <ul>
+        <li>Genera una limpieza mayor</li>
+        <li>Es más higienico</li>
+        <li>Los alumnos no se distraen</li>
+        <li>Los estudiantes se ven obligados a tirar residuos de cerca</li>
+      </ul>
+      </div>
+    </div>
+    <!--4 Componentes y materiales -->
+    <div class="componentes" class="color1">
+      <div class="tabla">
+      <h2>Materiales</h2>
+      <ul>
+        <li>Micro-bit</li>
+        <li>Servo-motor</li>
+        <li>Sensor de movimiento (HC-SR04)</li>
+        <li>Cables cocodrilo</li>
+        <li>Cables jumper</li>
+        <li>Protoboard</li>
+      </ul>
+      </div>
+      
+      <div class="imagenes">
+        <div class="img1">
+          <img src="img/microbit.png" class="img-size">
+          <img src="img/servo.jpg" class="img-size">
+          <img src="img/sensor.jpg" class="img-size">
+        </div>
+        <div class="img2">
+          <img src="img/protoboard.jpg" class="img-size">
+          <img src="img/jumper.jpg" class="img-size">
+          <img src="img/cocodrilo.jpg" class="img-size">
+        </div>
+      </div>
+    </div>
+    <!--5 Proceso de trabajo -->
+    <div class="proceso" class="color2">
+      <div class="partes">
+        <h2>Bocetos</h2>
+        <img src="img/boceto-uno.jpg" height="280px" width="200">
+        <img src="img/boceto-dos.jpg" height="280px" width="200">
+      </div>
+      <div class="partes">
+        <h2>Fotografías</h2>
+        <img src="img/prototipo.jpg" height="280px" width="200">
+      </div>
+      <div class="partes">
+        <h2>Moodboard</h2>
+        <img src="img/moodboard.jpg" height="240px" width="426px">
+      </div>
+    </div>
+    <!--6 Spot publicitario -->
+    <div class="spot" class="color1">
+      <h2>If you want a cleaner space, chose NovaBin</h2>
+      <video src="img/video.mp4" controls width="800px" height="600"></video>
+    </div>
+    <!--7 Galería -->
+    <div class="galeria" class="color2">
+      <h2>Galería del proceso</h2> 
+      <video src="img/prototipo-video.mp4" autoplay loop width="315" height="576"></video>
+      
+
+    </div>
+    <!--8 Equipo -->
+    <div class="equipo" class="color1">
+      <h2>Equipo</h2>
+      <table border="1">
+        <tr>
+          <th>Integrantes</th>
+          <th>Roles</th>
+        </tr>
+        <tr>
+          <td>Agustin Leites</td>
+          <td>Programador</td>
+        </tr>
+        <tr>
+          <td>Emanuel Pereira</td>
+          <td>Diseñador</td>
+        </tr>
+        <tr>
+          <td>Luana Martinez</td>
+          <td>Programadora</td>
+        </tr>
+        <tr>
+          <td>Nadin Flores</td>
+          <td>Programadora</td>
+        </tr>
+        <tr>
+          <td>Valentín Raffo</td>
+          <td>Tester</td>
+        </tr>
+      </table>
+    </div>
+    <!--9 Contacto -->
+    <div class="contacto" class="color2">
+      <form action="/enviar-datos" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
