@@ -172,3 +172,182 @@
     background-color: #9DB4C2;
     color: #1C1C24;
 }
+
+/* =========================================================
+   VERSIÓN CELULAR / TABLET
+   Solo se aplica en pantallas angostas. En computadora
+   (más de 900px) la página se ve exactamente igual que antes.
+   ========================================================= */
+@media (max-width: 900px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Las secciones dejan de medir 100vh fijo y crecen según su contenido */
+    .hero,
+    .sobre,
+    .solucion,
+    .componentes,
+    .proceso,
+    .spot,
+    .galeria,
+    .equipo {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100svh;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 48px 20px;
+        box-sizing: border-box;
+    }
+
+    /* 1 Hero */
+    .hero {
+        font-size: 20px;
+    }
+    .hero img {
+        max-width: 75%;
+        height: auto;
+    }
+
+    /* 2 Sobre el proyecto */
+    .sobre {
+        font-size: 17px;
+    }
+    .sobre h2 {
+        font-size: 22px;
+    }
+
+    /* 3 Solución: imagen arriba, texto abajo */
+    .solucion {
+        flex-direction: column;
+        font-size: 17px;
+    }
+    .solucion div {
+        margin-right: 0;
+        font-size: 17px;
+    }
+    .solucion h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .solucion img {
+        padding: 0;
+        width: 70%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    /* 4 Componentes: lista arriba, imágenes abajo */
+    .componentes {
+        flex-direction: column;
+        font-size: 17px;
+    }
+    .tabla {
+        padding-right: 0;
+        margin-bottom: 24px;
+        font-size: 17px;
+    }
+    .imagenes {
+        width: 100%;
+    }
+    .img1,
+    .img2 {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    .img-size {
+        width: 30%;
+        max-width: 160px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    /* 5 Proceso: cada bloque uno debajo del otro */
+    .proceso {
+        flex-direction: column;
+        font-size: 17px;
+    }
+    .partes {
+        padding: 16px 0;
+        max-width: 100%;
+    }
+    .partes img {
+        width: 46%;
+        max-width: none;
+        height: auto;
+    }
+    .partes:nth-child(2) img,
+    .partes:nth-child(3) img {
+        width: 100%;
+    }
+
+    /* 6 Spot */
+    .spot {
+        font-size: 17px;
+    }
+    .spot h2 {
+        padding-top: 0;
+        padding-bottom: 16px;
+        font-size: 20px;
+    }
+    .spot video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 7 Galería */
+    .galeria {
+        font-size: 17px;
+    }
+    .galeria h2 {
+        padding-bottom: 16px;
+    }
+    .galeria video {
+        width: 100%;
+        max-width: 315px;
+        height: auto;
+    }
+
+    /* 8 Equipo */
+    .equipo table,
+    .equipo {
+        font-size: 17px;
+    }
+    .equipo table {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    /* 9 Contacto: formulario en columna */
+    .contacto {
+        padding: 32px 20px;
+    }
+    .contacto form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    .contacto input,
+    .contacto button {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    .hero { font-size: 17px; }
+    .sobre h2 { font-size: 19px; }
+    .solucion h2 { font-size: 18px; }
+    .partes h2 { margin-bottom: 8px; }
+}
